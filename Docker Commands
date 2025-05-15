@@ -1,0 +1,31 @@
+✅ Basic Docker Commands & Use Cases
+
+Command	Use Case
+docker run -d -p 8080:80 nginx	Run NGINX container in background and expose port 80 on localhost:8080
+docker ps	List running containers
+docker ps -a	List all containers (running + stopped)
+docker images	Show all downloaded Docker images
+docker pull ubuntu	Download the latest Ubuntu image from Docker Hub
+docker build -t myapp .	Build an image from a Dockerfile in the current directory
+docker exec -it container_id bash	Open terminal inside a running container (interactive bash shell)
+docker stop container_id	Stop a running container
+docker start container_id	Start a stopped container
+docker restart container_id	Restart a running or stopped container
+docker rm container_id	Remove a stopped container
+docker rmi image_id	Remove an image
+docker logs container_id	Show logs from a container
+docker inspect container_id	View detailed configuration of a container
+docker network ls	List all Docker networks
+docker volume ls	List all Docker volumes
+docker system prune	Clean up unused containers, networks, and dangling images
+docker system prune -a --volumes	Aggressively clean unused images, containers, and volumes
+docker login	Authenticate with Docker Hub
+docker push myuser/myapp	Push your image to Docker Hub
+
+🛠️ Docker Compose Commands
+Command	Use Case
+docker-compose up -d	Start services in background using docker-compose.yml
+docker-compose down	Stop and remove containers, networks, volumes defined by Compose
+docker-compose build	Build or rebuild services
+docker-compose logs	View logs from all services
+docker-compose ps	List status of Compose services
